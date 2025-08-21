@@ -34,14 +34,14 @@ A modern, interactive web application that helps entrepreneurs create comprehens
 
 ## 🌐 Live Demo
 
-Visit the live application: [Business Plan Generator](https://YOUR_USERNAME.github.io/business-plan-generator)
+Visit the live application: [Business Plan Generator](https://jcobourn.github.io/business-plan-generator-app)
 
 ## 🏃‍♂️ Local Development
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/business-plan-generator.git
-   cd business-plan-generator
+   git clone https://github.com/jcobourn/business-plan-generator-app.git
+   cd business-plan-generator-app
    ```
 
 2. Start a local server:
