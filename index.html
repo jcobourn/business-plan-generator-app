@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Creator - Your Business Launch Guide</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Create your business with a personalized action plan, first steps, resources, and market insights. Perfect for entrepreneurs ready to launch.">
+    <meta name="keywords" content="business creator, business startup, entrepreneur, first steps, business launch, startup guide, business resources">
+    <meta name="author" content="Business Creator">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Business Creator - Your Business Launch Guide">
+    <meta property="og:description" content="Create your business with a personalized action plan, first steps, resources, and market insights.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/business-creator-preview.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Business Creator - Your Business Launch Guide">
+    <meta name="twitter:description" content="Create your business with a personalized action plan, first steps, resources, and market insights.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>Start your business today!</h1>
+                <p>Create your business with a personalized action plan and first steps to launch your dream business</p>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <!-- Business Input Section -->
+            <section class="business-section" id="businessSection">
+                <div class="form-card">
+                    <div class="form-group">
+                        <label for="locationInput">Where?</label>
+                        <div class="input-group">
+                            <input type="text" id="locationInput" placeholder="Enter your city, state, or zip code">
+                            <button id="useCurrentLocation" class="btn-location">
+                                <i class="fas fa-crosshairs"></i> Use Current Location
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="businessInput">What business do you want to start?</label>
+                        <div class="input-group">
+                            <input type="text" id="businessInput" placeholder="e.g., coffee shop, pet grooming, web design, food truck">
+                            <button id="suggestBusiness" class="btn-suggest">
+                                <i class="fas fa-lightbulb"></i> Not sure?
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button id="generatePlan" class="btn-primary" disabled>
+                        <i class="fas fa-rocket"></i> Start My Business
+                    </button>
+                </div>
+            </section>
+            
+            <!-- Loading Section -->
+            <section class="loading-section" id="loadingSection" style="display: none;">
+                <div class="loading-card">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                    <h3>Creating your business...</h3>
+                    <p>Analyzing your market and building your personalized action plan</p>
+                </div>
+            </section>
+            
+            <!-- Business Plan Section -->
+            <section class="plan-section" id="planSection" style="display: none;">
+                <div class="plan-card">
+                    <div class="plan-content" id="planContent">
+                        <!-- Business plan will be populated here -->
+                    </div>
+                    
+                    <div class="plan-actions">
+                        <button id="startOver" class="btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Start Over
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2024 Business Creator. Built for big ideas.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
